@@ -476,9 +476,9 @@ class Sparklines
       open_ended_polyline([[-5, adjusted_target_value], [width + 5, adjusted_target_value]])
     end
 
-    drawbox(coords[@norm_data.index(@norm_data.min)], 2, min_color) if has_min == true
-    drawbox(coords[@norm_data.index(@norm_data.max)], 2, max_color) if has_max == true
-    drawbox(coords[-1], 2, last_color) if has_last == true
+    drawbox(coords[@norm_data.index(@norm_data.min)], 2, min_color) if has_min == "true"
+    drawbox(coords[@norm_data.index(@norm_data.max)], 2, max_color) if has_max == "true"
+    drawbox(coords[-1], 2, last_color) if has_last == "true"
 
     @draw.draw(@canvas)
     @canvas
